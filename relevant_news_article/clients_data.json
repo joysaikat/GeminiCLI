@@ -1,0 +1,113 @@
+[
+  {
+    "client_id": "C001",
+    "name": "Alice Thompson",
+    "features": {
+      "profession": "Software Architect",
+      "location": "Seattle, WA",
+      "interests": ["Sustainability", "AI Ethics", "Jazz"]
+    },
+    "related_entities": [
+      {
+        "type": "Person",
+        "relation": "Spouse",
+        "name": "David Thompson",
+        "features": {
+          "profession": "Environmental Lawyer",
+          "focus": "Clean Energy"
+        }
+      },
+      {
+        "type": "Pet",
+        "relation": "Dog",
+        "name": "Luna",
+        "features": {
+          "breed": "Golden Retriever",
+          "age": 3
+        }
+      }
+    ],
+    "goals": [
+      {
+        "goal_id": "G001",
+        "description": "Purchase an off-grid cabin",
+        "features": {
+          "target_date": "2027-06-01",
+          "priority": "High",
+          "category": "Real Estate"
+        }
+      }
+    ]
+  },
+  {
+    "client_id": "C002",
+    "name": "Marcus Chen",
+    "features": {
+      "profession": "Venture Capitalist",
+      "location": "San Francisco, CA",
+      "interests": ["Space Exploration", "Quantum Computing", "Marathons"]
+    },
+    "related_entities": [
+      {
+        "type": "Person",
+        "relation": "Daughter",
+        "name": "Sophie Chen",
+        "features": {
+          "age": 12,
+          "interest": "Robotics"
+        }
+      }
+    ],
+    "goals": [
+      {
+        "goal_id": "G002",
+        "description": "Invest in a Series A biotech firm",
+        "features": {
+          "target_date": "2026-12-15",
+          "priority": "Medium",
+          "category": "Investment"
+        }
+      },
+      {
+        "goal_id": "G003",
+        "description": "Run the Tokyo Marathon",
+        "features": {
+          "target_date": "2027-03-01",
+          "priority": "Medium",
+          "category": "Health"
+        }
+      }
+    ]
+  },
+  {
+    "client_id": "C003",
+    "name": "Elena Rodriguez",
+    "features": {
+      "profession": "Medical Researcher",
+      "location": "Boston, MA",
+      "interests": ["Gardening", "Classical History", "Sailing"]
+    },
+    "related_entities": [
+      {
+        "type": "Pet",
+        "relation": "Cat",
+        "name": "Oliver",
+        "features": {
+          "breed": "Maine Coon",
+          "personality": "Playful"
+        }
+      }
+    ],
+    "goals": [
+      {
+        "goal_id": "G004",
+        "description": "Publish paper on CRISPR breakthroughs",
+        "features": {
+          "target_date": "2026-09-30",
+          "priority": "Critical",
+          "category": "Academic"
+        }
+      }
+    ]
+  }
+]

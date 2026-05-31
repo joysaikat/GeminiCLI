@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+thefuzz
+python-Levenshtein
+sentence-transformers
+torch
+feedparser
