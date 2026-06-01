@@ -1,0 +1,11 @@
+# Gemini CLI Project Rules
+
+1. Security First: Never log or commit API keys or secrets.
+2. Context Efficiency: Always try to minimize the number of tool calls and tokens used.
+3. Testing: Every new feature must have a corresponding test case or a verification step.
+4. Documentation: All major architectural changes must be recorded in the MEMORY.md file.
+5. User Privacy: Do not send sensitive user files to external servers without explicit permission.
+
+Project Name: Gemini CLI
+Lead Engineer: Gemini
+Date: May 2026
