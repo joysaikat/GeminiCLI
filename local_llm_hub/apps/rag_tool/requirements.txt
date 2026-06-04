@@ -5,3 +5,7 @@ chromadb
 sentence-transformers
 pypdf
 unstructured
+fastapi
+uvicorn
+python-multipart
+gradio

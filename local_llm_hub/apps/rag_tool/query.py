@@ -1,3 +1,4 @@
+import os
 from langchain_ollama import OllamaLLM
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
@@ -6,7 +7,8 @@ from langchain_core.prompts import ChatPromptTemplate
 # Configuration
 DB_PATH = "vector_db"
 MODEL_NAME = "all-MiniLM-L6-v2"
-LLM_MODEL = "llama3"
+LLM_MODEL = os.getenv("LLM_MODEL", "llama3")
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
 def query_rag(query_text):
     # 1. Load the Vector DB
@@ -23,7 +25,7 @@ def query_rag(query_text):
     context_text = "\n\n---\n\n".join([doc.page_content for doc in docs])
     
     # 4. Setup the LLM (Ollama)
-    llm = OllamaLLM(model=LLM_MODEL)
+    llm = OllamaLLM(model=LLM_MODEL, base_url=OLLAMA_BASE_URL)
     
     # 5. Create the Prompt
     system_prompt = (
